@@ -7,7 +7,7 @@ var bodyParser = require("body-parser");
 const { FileSystemWallet, Gateway } = require('fabric-network');
 const fs = require('fs');
 const path = require('path');
-const ccpPath = path.resolve(__dirname, '.', 'network' ,'connection.json');
+const ccpPath = path.resolve(__dirname, '.', 'network', 'connection.json');
 const ccpJSON = fs.readFileSync(ccpPath, 'utf8');
 const ccp = JSON.parse(ccpJSON);
 
@@ -48,16 +48,20 @@ mongoose
 
 // Router
 var mainPageRouter = require("./router/mainPage");
-var loginRouter = require("./router/login");
+var projectRouter = require("./router/project");
 var serviceRouter = require("./router/service");
+var aboutRouter = require("./router/about");
+var announcementRouter = require("./router/announcement");
 var testRouter = require("./router/test");
-
+var loginRouter = require("./router/login");
 
 app.use("/", mainPageRouter);
-app.use("/login", loginRouter);
+app.use("/project", projectRouter);
 app.use("/service", serviceRouter);
+app.use("/about", aboutRouter);
+app.use("/announcement", announcementRouter);
 app.use("/test", testRouter);
-
+app.use("/login", loginRouter);
 // server start
 app.listen(port, function () {
   console.log(`server on! http://localhost${port}`);
