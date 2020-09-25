@@ -3,7 +3,6 @@
 
 <head>
     <%- include('partials/head') %>
-
 </head>
 
 <body>
@@ -13,26 +12,31 @@
             <h1 class="display-4">공시</h1>
             <p class="lead">공시</p>
             <hr class="my-4">
+            <div>
+                <img src="/views/img/imageF/001.PNG" />
+            </div>
+            <hr class="my-4">
             <a>가상자산 별 상세정보</a>
             <div class="project-table" style="display: flex; flex-direction: row; justify-content: space-around; ">
                 <div class="table-header">
-                    <div class="item company cursor">회사이름<i aria-hidden="true"> </i></div>
-                    <div class="item founder cursor">설립자<i aria-hidden="true"> </i></div>
-                    <div class="item location cursor">위치<i aria-hidden="true"> </i></div>
-                    <div class="item corporateJurisdiction cursor">법인 관할건<i aria-hidden="true"> </i></div>
-                    <div class="item virtualAssetName cursor">가상자산(이름)<i aria-hidden="true"> </i></div>
-                    <div class="item virtualAssetLog cursor">가상자산(로그)<i aria-hidden="true"> </i></div>
-                    <div class="item developer cursor">주요 개발자<i aria-hidden="true"> </i></div>
+                    <div class="itemCompanyCursor">회사이름<i aria-hidden="true"> </i></div>
+                    <div class="itemFounderCursor">설립자<i aria-hidden="true"> </i></div>
+                    <div class="itemLocationCursor">위치<i aria-hidden="true"> </i></div>
+                    <div class="itemCorporateJurisdictionCursor">법인 관할건<i aria-hidden="true"> </i></div>
+                    <div class="itemVirtualAssetNameCursor">가상자산(이름)<i aria-hidden="true"> </i></div>
+                    <div class="itemVirtualAssetLogCursor">가상자산(로그)<i aria-hidden="true"> </i></div>
+                    <div class="itemDeveloperCursor">주요 개발자<i aria-hidden="true"> </i></div>
                 </div>
                 <div style="display: list-item;">
-                    <div type="text">써트온</div>
-                    <div>Sergey Nazarov</div>
-                    <div>Strathvale House, 90 North Church Street, George Town, KY1-1102, Grand Cayman, Cayman
-                        Islands</div>
-                    <div>케이맨섬</div>
-                    <div>Chainlink</div>
-                    <div>Chainlink(Log)</div>
-                    <div>Steve Ellis</div>
+                    <div class="itemCompany">써트온</div>
+                    <div class="itemFounder">Sergey Nazarov</div>
+                    <div class="itemLocation">
+                        Strathvale House, 90 North Church Street, George Town, KY1-1102, Grand Cayman, Cayman Islands
+                    </div>
+                    <div class="itemCorporateJurisdiction">케이맨섬</div>
+                    <div class="itemVirtualAssetName">Chainlink</div>
+                    <div class="itemVirtualAssetLog">Chainlink(Log)</div>
+                    <div class="itemDeveloper">Steve Ellis</div>
                 </div>
             </div>
         </div>
